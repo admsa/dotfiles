@@ -2,7 +2,6 @@ set nocompatible                                                        "We want
 
 so ~/.vim/plugins.vim
 
-
 syntax enable
 
 set backspace=indent,eol,start                                           "Make backspace behave like every other editor.
@@ -16,18 +15,19 @@ set autowriteall                                                         "Automa
 set complete=.,w,b,u                                                     "Set auto completion
 set tabstop=4                                                            "When insertmode mode width
 set expandtab                                                            "When insertmode mode width
-set softtabstop=4                                                        "When insertmode mode width
+set softtabstop=0                                                        "When insertmode mode width
 set shiftwidth=4                                                         "When normal mode width
 set ai et nowrap noet
 set smartindent
+set smarttab
 set cindent
 set title
 set encoding=utf-8
 set ignorecase
 
-set list
-set listchars=tab:»\ ,eol:¬,trail:⋅,extends:›,precedes:‹
-set showbreak=↪
+"set list
+"set listchars=tab:»\ ,eol:¬,trail:⋅,extends:›,precedes:‹
+"set showbreak=↪
 
 hi SpecialKey ctermfg=8
 hi NonText ctermfg=8 guifg=gray
@@ -47,13 +47,15 @@ hi LineNr guibg=bg
 
 "-----------------Airline and Material Theme--------------"
 set background=dark
+"colorscheme hybrid_reverse
 colorscheme hybrid_reverse
+"colorscheme material-theme
 
 let g:enable_bold_font = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_section_b = '%{strftime("%c")}%'
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline_section_b = '%{strftime("%c")}%'
 let g:airline_section_y = 'BN: %{bufnr("%")}%'
 let g:airline_theme = "hybrid"
 set laststatus=2
@@ -113,7 +115,11 @@ set grepprg=ag             "Use Ag for search
 
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
+"/
+"/ vim-better-whitespace.vim
+"/
 
+autocmd BufEnter * EnableStripWhitespaceOnSave
 
 "-----------------Source Files---------------"
 
@@ -174,4 +180,5 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 
 " Exclude CTags
 " ctags -R --exclude=node_modules|vendor
+
 

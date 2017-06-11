@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # Install required apps
-sudo apt-get install -yq 
-	git vim \
+sudo apt-get install git
+	vim \
 	tmux \
 	zsh \
 	git-core \
 	exuberant-ctags \
-	silversearcher-ag
+	silversearcher-ag -yq
 
 # Install oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
