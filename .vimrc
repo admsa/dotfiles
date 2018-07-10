@@ -17,9 +17,9 @@ set tabstop=2                                                            "When i
 set expandtab                                                            "When insertmode mode width
 set softtabstop=2                                                        "When insertmode mode width
 set shiftwidth=2                                                         "When normal mode width
-set ai 
+set ai
 set nowrap
-#set smartindent
+"set smartindent
 set smarttab
 set cindent
 set title
