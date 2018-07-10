@@ -13,12 +13,13 @@ set number                                                               "Let's 
 set noerrorbells visualbell t_vb=
 set autowriteall                                                         "Automatic write file when switching
 set complete=.,w,b,u                                                     "Set auto completion
-set tabstop=4                                                            "When insertmode mode width
+set tabstop=2                                                            "When insertmode mode width
 set expandtab                                                            "When insertmode mode width
-set softtabstop=0                                                        "When insertmode mode width
-set shiftwidth=4                                                         "When normal mode width
-set ai et nowrap noet
-set smartindent
+set softtabstop=2                                                        "When insertmode mode width
+set shiftwidth=2                                                         "When normal mode width
+set ai 
+set nowrap
+#set smartindent
 set smarttab
 set cindent
 set title
