@@ -1,3 +1,3 @@
-> https://neovim.io/
-> vim-plug
-> https://vim-bootstrap.com/
+>- https://neovim.io/
+>- vim-plug
+>- https://vim-bootstrap.com/
