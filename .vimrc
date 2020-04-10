@@ -15,8 +15,16 @@ set backspace=indent,eol,start                                           "Make b
 let mapleader = ','                                                      "The default leader is \, but a comma is much better
 nmap <leader>w :w!<cr>
 nmap <leader>x :q!<cr>
+
+"Map escape to jj in insert mode
 imap jj <esc>
-set number                                                               "Let's activate line numbers
+
+"Map
+nmap <Tab> <c-y>,
+
+"set number                                                               "Let's activate line numbers
+set relativenumber                                                       "Set relative line number
+set nonu                                                                 "Set no number
 set noerrorbells visualbell t_vb=
 set autowriteall                                                         "Automatic write file when switching
 set complete=.,w,b,u                                                     "Set auto completion

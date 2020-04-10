@@ -1,7 +1,7 @@
 # dotfiles
 Vim dotfiles
 
-.zshrc configurations
+>zshrc configurations
 ```
 # export term=screen-256color
 # alias tmux='tmux -2'
