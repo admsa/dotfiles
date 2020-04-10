@@ -2,6 +2,13 @@ set nocompatible                                                        "We want
 
 so ~/.vim/plugins.vim
 
+"set term=xterm-256color
+
+" kristijanhusak/vim-hybrid-material
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 syntax enable
 
 set backspace=indent,eol,start                                           "Make backspace behave like every other editor.
@@ -34,7 +41,7 @@ hi SpecialKey ctermfg=8
 hi NonText ctermfg=8 guifg=gray
 
 "-----------------Visuals--------------"
-set t_CO=256                                                             "Use <t_CO> colors
+"set t_CO=256                                                             "Use <t_CO> colors
 " colorscheme atom-dark-256
 set linespace=15                                                         "Set line-height
 set guioptions-=e
@@ -48,16 +55,18 @@ hi LineNr guibg=bg
 
 "-----------------Airline and Material Theme--------------"
 set background=dark
-"colorscheme hybrid_reverse
-colorscheme hybrid_reverse
-"colorscheme material-theme
+colorscheme hybrid_material
 
+let g:airline_powerline_fonts = 1
 let g:enable_bold_font = 1
+let g:enable_italic_font = 1
+let g:enable_hybrid_transparent_background = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
-"let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#left_alt_sep = '|'
 "let g:airline_section_b = '%{strftime("%c")}%'
 let g:airline_section_y = 'BN: %{bufnr("%")}%'
+let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_theme = "hybrid"
 set laststatus=2
 
@@ -131,7 +140,6 @@ autocmd BufEnter * EnableStripWhitespaceOnSave
 "augroup END
 
 
-
 "-----------------Notes------------------"
 " gt                                                                     "Switch tabs
 " bd                                                                     "Buffer delete
@@ -181,5 +189,4 @@ autocmd BufEnter * EnableStripWhitespaceOnSave
 
 " Exclude CTags
 " ctags -R --exclude=node_modules|vendor
-
 
