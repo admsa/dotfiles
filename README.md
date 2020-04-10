@@ -2,7 +2,7 @@
 Vim dotfiles
 
 .zshrc configurations
-<!--
+```
 # export term=screen-256color
 # alias tmux='tmux -2'
 export term=xterm-256color
@@ -11,4 +11,4 @@ export term=xterm-256color
 function tmuxa() {
   tmux attach-session -t $1
 }
--->
+```
