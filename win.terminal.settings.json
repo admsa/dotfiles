@@ -1,0 +1,39 @@
+{
+    // Custom
+    "theme": "dark",
+    "alwaysShowTabs": false,
+    "tabWidthMode": "titleLength",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            "fontFace": "Roboto Mono for Powerline",
+            "fontSize": 11,
+            //"useAcrylic" : true,
+            //"acrylicOpacity": 0.9,
+            //"fontWeight": "thin",
+            "cursorShape": "filledBox",
+            "colorScheme": "One Half Dark"
+        },
+        "list":
+        [
+            {
+                "guid": "",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe -NoLogo",
+                "hidden": false
+            },
+            {
+                "guid": "",
+                "hidden": false,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl"
+            }
+        ]
+    },
+    "keybindings":
+    [
+        { "command": "closeWindow", "keys": "ctrl+d" }
+    ]
+}
