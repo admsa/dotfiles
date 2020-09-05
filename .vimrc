@@ -2,16 +2,15 @@ set nocompatible                                                        "We want
 
 so ~/.vim/plugins.vim
 
-"set term=xterm-256color
+set term=xterm-256color
 
-" kristijanhusak/vim-hybrid-material
-if (has("termguicolors"))
-  set termguicolors
-endif
+"if (has("termguicolors"))
+" set termguicolors
+"endif
 
 syntax enable
 
-set backspace=indent,eol,start                                           "Make backspace behave like every other editor.
+"set backspace=indent,eol,start                                           "Make backspace behave like every other editor.
 let mapleader = ','                                                      "The default leader is \, but a comma is much better
 nmap <leader>w :w!<cr>
 nmap <leader>x :q!<cr>
@@ -20,7 +19,7 @@ nmap <leader>x :q!<cr>
 imap jj <esc>
 
 "Map
-nmap <Tab> <c-y>,
+"nmap <Tab> <c-y>,
 
 "set number                                                               "Let's activate line numbers
 set relativenumber                                                       "Set relative line number
