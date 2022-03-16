@@ -1,39 +1,85 @@
 {
-    // Custom
-    "theme": "dark",
-    "alwaysShowTabs": false,
-    "tabWidthMode": "titleLength",
-
-    "profiles":
-    {
-        "defaults":
+    "actions": 
+    [
         {
-            "fontFace": "Roboto Mono for Powerline",
-            "fontSize": 11,
-            //"useAcrylic" : true,
-            //"acrylicOpacity": 0.9,
-            //"fontWeight": "thin",
-            "cursorShape": "filledBox",
-            "colorScheme": "One Half Dark"
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
         },
-        "list":
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "alwaysShowTabs": false,
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "face": "JetBrains Mono",
+                "size": 12
+            }
+        },
+        "list": 
         [
             {
-                "guid": "",
-                "name": "Windows PowerShell",
-                "commandline": "powershell.exe -NoLogo",
-                "hidden": false
-            },
-            {
-                "guid": "",
+                "colorScheme": "Atom One Dark",
+                "guid": "{5a069d55-87bd-57cf-8a07-2726b203d3e5}",
                 "hidden": false,
-                "name": "Ubuntu-18.04",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Ubuntu 20.04.4 LTS",
+                "scrollbarState": "hidden",
+                "source": "CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc",
+                "useAcrylic": false
             }
         ]
     },
-    "keybindings":
+    "schemes": 
     [
-        { "command": "closeWindow", "keys": "ctrl+d" }
-    ]
+        {
+            "background": "#282C34",
+            "black": "#000000",
+            "blue": "#61AFEF",
+            "brightBlack": "#5C6370",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B6C2",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C678DD",
+            "brightRed": "#E06C75",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#D19A66",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#56B6C2",
+            "foreground": "#CCCCCC",
+            "green": "#98C379",
+            "name": "Atom One Dark",
+            "purple": "#C678DD",
+            "red": "#E06C75",
+            "selectionBackground": "#FFFFFF",
+            "white": "#ABB2BF",
+            "yellow": "#D19A66"
+        }
+    ],
+    "tabWidthMode": "compact",
+    "theme": "dark"
 }
